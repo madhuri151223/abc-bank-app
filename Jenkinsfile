@@ -10,7 +10,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Testing ABC Bank application...'
+             sh 'python3 -m pytest test_app.py -v'
             }
         }
 
